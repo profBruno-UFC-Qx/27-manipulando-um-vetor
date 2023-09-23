@@ -1,13 +1,11 @@
-// Escreva seu código aqui
+/* Exporte da uma das funções criadas. Ex:
 
-/* Descomentar a linha abaixo antes de submeter e exportar a função que deve
-ser chamada:
+function minhaFuncao() {}
+function minhaOutraFuncao {}
 
-Ex: 
-  function x() {
-    console.log()
-  }
+module.exports = {
+  minhaFuncao,
+  minhaOutraFuncao
+}
 
-  module.exports = x
 */
-//module.exports = sua funcao aqui;

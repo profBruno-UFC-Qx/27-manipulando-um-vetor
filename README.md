@@ -1,8 +1,8 @@
 # Descrição
 
-Neste exercício, você vai criar uma função que recebe informações sobre um Pokémon e retorna um objeto que o representa.
+Neste exercício, você irá criar funções para adicionar, editar e excluir tarefas em um vetor. 
 
-Objetivo desse exercício é praticar a criação de funções e objetos em JavaScript. 
+Objetivo desse exercício é praticar a manipulação de vetores em JavaScript. 
 
 **Todas as alterações devem ser feitas nos arquivos já existentes**
 
@@ -10,29 +10,25 @@ Objetivo desse exercício é praticar a criação de funções e objetos em Java
 
 ## Instruções:
 
-1. Crie uma função chamada `criarPokemon` que aceita quatro argumentos: 
-  - nome (string), tipo (string), nivel (number) e hp (number).
-2. Dentro da função, crie um objeto vazio chamado pokemon.
-3. Adicione as seguintes propriedades ao objeto pokemon com base nos argumentos recebidos:
-  - `nome`: Nome do Pokémon (string).
-  - `tipo`: Tipo do Pokémon (string).
-  - `nivel`: Nível do Pokémon (number).
-  - `hp`: Pontos de vida do Pokémon (number).
-4. Retorne o objeto pokemon preenchido.
-5. Fora da função, chame `criarPokemon()` passando valores fictícios como argumentos e armazene o objeto resultante.
-6. Exiba o objeto resultante no console.
+Cada tarefa é representada por um objeto que possui as seguintes propriedades como mostra o exemplo abaixo: título, concluida e prioridade.
 
+Exemplos de tarefas:
 
-Exemplo de criação da função e chamada:
-
-```javascript
-function criarPokemon(nome, tipo, nivel, hp) {
-  ...
-}
-
-const meuPokemon = criarPokemon("Pikachu", "Elétrico", 25, 80);
-console.log(meuPokemon);
+```js
+const tarefas = [
+  { titulo: "Estudar JavaScript", concluida: false, prioridade: 2 };
+  { titulo: "Estudar HTML e CSS", concluida: true, prioridade: 1 }
+]
 ```
-Dica: 
 
-- Use os argumentos passados para a função para preencher as propriedades do Pokémon.
+
+1. Implemente três funções:
+  1. `adicionarTarefa`: Recebe o vetor onde a nova tarefa deve ser adicionada e um objeto de tarefa.
+     - Deve retornar alterado com a nova tarefa no final do vetor
+  2. `editarTarefa`: Recebe o vetor, o índice de uma tarefa existente e um objeto contendo os novos detalhes da tarefa.
+     - Deve retornar o veter alterado
+     - Caso índice informado não existir, o vetor inalterado deve ser retornado  
+  3. `excluirTarefa`: Recebo o vetor e o índice no qual uma tarefa está armazenada e a remove do vetor.
+     - Caso índice informado não existir, o vetor inalterado deve ser retornado
+2. Teste cada função chamando-as e exibindo o resultado.
+
